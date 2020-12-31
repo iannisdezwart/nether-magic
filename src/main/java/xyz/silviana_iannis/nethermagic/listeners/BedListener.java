@@ -25,6 +25,8 @@ public class BedListener implements Listener {
 
 		if (player.getWorld().getName().endsWith("_nether") && bed.getY() > 127) {
 			event.setUseBed(Event.Result.ALLOW);
+			player.setBedSpawnLocation(bed.getLocation());
+			player.sendMessage("Respawn point set");
 		}
 	}
 }
