@@ -24,7 +24,10 @@ public class WaterListener implements Listener {
 		if (usedItem == null || usedItem.getType() != Material.WATER_BUCKET) return;
 
 		Player player = event.getPlayer();
-		Block selectedBlock = event.getClickedBlock().getRelative(event.getBlockFace());
+		Block clickedBlock = event.getClickedBlock();
+		if (clickedBlock == null) return;
+
+		Block selectedBlock = clickedBlock.getRelative(event.getBlockFace());
 
 		// Cancel water removal when water is placed above the nether ceiling
 
