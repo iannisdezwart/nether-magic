@@ -10,6 +10,7 @@ import org.bukkit.event.block.Action;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
 import xyz.silviana_iannis.nethermagic.NetherMagic;
+
 public class WaterListener implements Listener {
 
 	private final NetherMagic main;
