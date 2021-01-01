@@ -12,7 +12,6 @@ import org.bukkit.Material;
 import xyz.silviana_iannis.nethermagic.NetherMagic;
 
 public class WaterListener implements Listener {
-
 	private final NetherMagic main;
 
 	public WaterListener(NetherMagic main) {

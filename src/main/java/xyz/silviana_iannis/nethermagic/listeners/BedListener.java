@@ -9,7 +9,6 @@ import org.bukkit.event.player.PlayerBedEnterEvent;
 import xyz.silviana_iannis.nethermagic.NetherMagic;
 
 public class BedListener implements Listener {
-
 	private final NetherMagic main;
 
 	public BedListener(NetherMagic main) {
